@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Untukmu, yaya tayangku 💖</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:'Poppins',sans-serif;
+      background:#fff5f9;color:#333;overflow-x:hidden
+    }
+
+    /* PASSWORD */
+    #passwordGate{
+      position:fixed;inset:0;background:#fff5f9;
+      display:flex;flex-direction:column;
+      align-items:center;justify-content:center;
+      gap:18px;z-index:9999;transition:.8s
+    }
+    #passwordGate.hide{opacity:0;pointer-events:none}
+    .flower-box{font-size:64px}
+    #bloom{opacity:0;transition:.6s}
+    #pwdInput{padding:12px 16px;border-radius:12px;border:none;text-align:center}
+    #pwdBtn{padding:10px 18px;border-radius:10px;border:none;background:#ff5c8a;color:#fff}
+    #pwdHint{color:#ff5c8a;font-size:13px}
+    #pwdError{display:none;color:#ff3f8e;font-size:13px}
+
+    header{background:#ff6fa5;padding:18px;text-align:center;color:#fff;font-weight:700}
+
+    .top-love-text{
+      margin:40px auto 10px;background:#fff;padding:10px 18px;
+      border-radius:999px;width:fit-content;
+      box-shadow:0 6px 18px rgba(255,105,160,.25)
+    }
+
+    .title{text-align:center;font-family:Pacifico;color:#ff5c8a;font-size:32px;margin-top:12px}
+    .subtitle{text-align:center;font-size:14px;margin-top:10px}
+
+    .buttons{display:flex;justify-content:center;gap:12px;margin-top:20px}
+    button{padding:10px 16px;border-radius:10px;border:none;font-size:13px;cursor:pointer}
+    .btn-love{background:#ff5c8a;color:#fff}
+    .btn-invite{background:#fff;color:#ff5c8a;border:1px solid #ff5c8a}
+
+    .countdown{text-align:center;margin:40px 0}
+    .countdown h3{font-family:Pacifico;color:#ff5c8a}
+
+    .section{max-width:700px;margin:40px auto;padding:0 20px}
+    .card{
+      background:#fff;padding:16px;border-radius:14px;
+      box-shadow:0 10px 30px rgba(255,105,160,.15);
+      margin-bottom:18px
+    }
+
+    /* SLIDER */
+    .slider{
+      position:relative;height:220px;margin:12px 0;
+      overflow:hidden;border-radius:12px
+    }
+    .slider img{
+      position:absolute;inset:0;width:100%;height:100%;
+      object-fit:cover;opacity:0;transition:.8s
+    }
+    .slider img.active{opacity:1}
+
+    video{width:100%;border-radius:14px}
+
+    dialog{
+      border:none;border-radius:14px;padding:20px;
+      width:90%;max-width:420px
+    }
+    .close{text-align:right;font-weight:bold;cursor:pointer;color:#ff5c8a}
+
+    /* STARLIGHT */
+    .starlight{
+      position:fixed;
+      pointer-events:none;
+      color:#ff3f8e;
+      font-size:14px;
+      font-weight:600;
+      text-shadow:0 0 8px rgba(255,63,142,.6);
+      animation:fadeStar 2.5s forwards;
+      z-index:9999;
+    }
+
+    @keyframes fadeStar{
+      from{opacity:1;transform:translateY(0)}
+      to{opacity:0;transform:translateY(-20px)}
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- PASSWORD -->
+<div id="passwordGate">
+  <div class="flower-box">🌸<span id="bloom">🌺</span></div>
+  <input id="pwdInput" type="password" placeholder="Password">
+  <div id="pwdHint">OUR FUTURE KIDS</div>
+  <button id="pwdBtn">Unlock</button>
+  <div id="pwdError">Password salah</div>
+</div>
+
+<header>🎉 Happy Birthday Tayangkuu 🎉</header>
+
+<div class="top-love-text">💖 Untuk <b>yaya tayangku</b></div>
+<div class="title">I Lovee Youu Soo Muchh</div>
+<div class="subtitle">Happy Birthday. I made this just to remind you how much you mean to me.</div>
+
+<div class="buttons">
+  <button class="btn-love" id="loveBtn">💌 Love Letter</button>
+  <button class="btn-invite" id="inviteBtn">💗 Invitation</button>
+</div>
+
+<div class="countdown">
+  <h3>On the Way to Our First Anniversary</h3>
+  <div id="timer">Loading...</div>
+</div>
+
+<!-- SLIDER -->
+<div class="section">
+
+  <div class="card">
+    📅 <b>First Datee</b>
+    <div class="slider">
+      <img src="WhatsApp Image 2025-12-14 at 21.44.00.jpeg" class="active">
+      <img src="WhatsApp Image 2025-12-14 at 21.44.00.jpeg">
+    </div>
+    dagdigdug banaaa hatii akuu🤥
+  </div>
+
+  <div class="card">
+    💌 <b>First Bounce Street</b>
+    <div class="slider">
+      <img src="WhatsApp Image 2025-12-14 at 21.44.01.jpeg" class="active">
+      <img src="WhatsApp Image 2025-12-14 at 21.44.01.jpeg">
+    </div>
+    Ternyata Hati aku yang ke bounce
+  </div>
+
+  <div class="card">
+    💍 <b>First punya meyaaa</b>
+    <div class="slider">
+      <img src="WhatsApp Image 2025-12-14 at 21.44.01 (1).jpeg" class="active">
+      <img src="WhatsApp Image 2025-12-14 at 21.44.01 (1).jpeg">
+    </div>
+    sebelum ada 11 anakk lainyaa hehehehe
+  </div>
+
+</div>
+
+<div class="section">
+  <h3 style="text-align:center;font-family:Pacifico;color:#ff5c8a">Video Kenangan</h3>
+  <video controls src="WhatsApp Video 2025-12-14 at 21.31.50.mp4"></video>
+</div>
+
+<audio id="bgMusic" src="Lord_Huro_-_The_Night_We_Met_(mp3.pm).mp3" loop></audio>
+
+<dialog id="loveModal">
+  <div class="close" onclick="loveModal.close()">X</div>
+  <div id="loveText"></div>
+</dialog>
+
+<dialog id="inviteModal">
+  <div class="close" onclick="inviteModal.close()">X</div>
+  <div id="inviteText"></div>
+</dialog>
+
+<script>
+  /* MUSIC */
+  const bgMusic = document.getElementById('bgMusic');
+  function fadeInMusic(target=0.4){
+    bgMusic.volume=0;
+    bgMusic.play();
+    const step=target/40;
+    const fade=setInterval(()=>{
+      if(bgMusic.volume<target){
+        bgMusic.volume+=step;
+      }else clearInterval(fade);
+    },50);
+  }
+
+  /* VIDEO vs MUSIC */
+  document.querySelectorAll('video').forEach(video=>{
+    video.addEventListener('play',()=>bgMusic.pause());
+    video.addEventListener('ended',()=>fadeInMusic());
+  });
+
+  /* PASSWORD */
+  const PASSWORD='meyamiya';
+  pwdBtn.onclick=()=>{
+    if(pwdInput.value.trim().toLowerCase()===PASSWORD){
+      bloom.style.opacity=1;
+      setTimeout(()=>{
+        passwordGate.classList.add('hide');
+        fadeInMusic();
+      },800);
+    }else{
+      pwdError.style.display='block';
+      pwdInput.value='';
+    }
+  };
+
+  /* COUNTDOWN */
+  const target=new Date('2026-01-05T00:00:00').getTime();
+  setInterval(()=>{
+    const d=target-Date.now();
+    if(d<0)return;
+    timer.innerText=
+      `${Math.floor(d/86400000)} Hari `+
+      `${Math.floor(d%86400000/3600000)} Jam `+
+      `${Math.floor(d%3600000/60000)} Menit `+
+      `${Math.floor(d%60000/1000)} Detik`;
+  },1000);
+
+  function typeText(el,text){
+    el.innerHTML='';let i=0;
+    const t=setInterval(()=>{
+      el.innerHTML+=text.charAt(i++);
+      if(i>=text.length)clearInterval(t);
+    },40);
+  }
+
+  loveBtn.onclick=()=>{
+    loveModal.showModal();
+    typeText(loveText,
+      'Happy birthday, tayanggkuww. I hope today reminds you how deeply you’re loved, not just today but also in all the quiet moments we share. I don’t celebrate you only because it’s your birthday, I celebrate you because you exist and because you make life feel warmer just by being in it. Being with you has taught me that love doesn’t always have to be loud, sometimes it’s simply feeling safe, understood, and calm, and that’s exactly what you give me without even trying. I’m grateful for every version of you.'
+    );
+  };
+
+  inviteBtn.onclick=()=>{
+    inviteModal.showModal();
+    typeText(inviteText,
+      'I’d love to invite you to a lunch date with me at an Asian restaurant at The Ritz-Carlton. Time: 1:00 PM. Dress code: Black formal 🖤'
+    );
+  };
+
+  /* SLIDER AUTO */
+  document.querySelectorAll('.slider').forEach(slider=>{
+    const imgs=slider.querySelectorAll('img');
+    let i=0;
+    setInterval(()=>{
+      imgs[i].classList.remove('active');
+      i=(i+1)%imgs.length;
+      imgs[i].classList.add('active');
+    },3000);
+  });
+
+  /* STARLIGHT */
+  const stars=[
+    'I choose you, every single day',
+    'You’re my favorite part of the day',
+    'You’re my home',
+    'You make everything warmer',
+    'I smile more because of you',
+    'Being with you feels right',
+    'You’re my favorite hello'
+  ];
+
+  document.addEventListener('click',e=>{
+    if(e.target.closest('button,dialog,#passwordGate'))return;
+    const s=document.createElement('div');
+    s.className='starlight';
+    s.textContent=stars[Math.floor(Math.random()*stars.length)];
+    s.style.left=e.clientX+'px';
+    s.style.top=e.clientY+'px';
+    document.body.appendChild(s);
+    setTimeout(()=>s.remove(),2500);
+  });
+</script>
+
+</body>
+</html>
